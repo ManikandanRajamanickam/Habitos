@@ -1,0 +1,25 @@
+2019-01-09 16:56:50,245 | com.altius.automation.TestAutomation |INFO | Invalid data is successfully passed through the Username field
+2019-01-09 16:56:50,828 | com.altius.automation.TestAutomation |INFO | Submit button is successfully cliked after invalid data is passed through the username field
+2019-01-09 16:56:51,064 | com.altius.automation.TestAutomation |INFO | Wrong password                
+2019-01-09 16:56:51,438 | com.altius.automation.TestAutomation |INFO | Invalid password is entered through the password field
+2019-01-09 16:56:51,617 | com.altius.automation.TestAutomation |INFO | User unable to login with wrong PW
+2019-01-09 16:56:51,809 | com.altius.automation.TestAutomation |INFO | Checking the wrong UN and PW                      
+2019-01-09 16:56:52,083 | com.altius.automation.TestAutomation |INFO | Invalid Username is entered to the UN field
+2019-01-09 16:56:52,343 | com.altius.automation.TestAutomation |INFO | Invalid password is entered to the PW field
+2019-01-09 16:56:52,887 | com.altius.automation.TestAutomation |INFO | Submit is clicked after Wrong UN and PW
+2019-01-09 16:56:52,888 | com.altius.automation.TestAutomation |INFO | Validation is raised and User unable to login with wrong UN & PW
+2019-01-09 16:56:53,571 | com.altius.automation.TestAutomation |INFO | Valid User name is passed to the UN field
+2019-01-09 16:56:53,806 | com.altius.automation.TestAutomation |INFO | Submit button is clicked after the valid UN is passed to the UN field
+2019-01-09 16:56:53,807 | com.altius.automation.TestAutomation |INFO | User Unable to login with only correct UN
+2019-01-09 16:56:54,714 | com.altius.automation.TestAutomation |INFO | Only valid password data is passed to the password field 
+2019-01-09 16:56:55,450 | com.altius.automation.TestAutomation |INFO | 
+2019-01-09 16:56:56,374 | com.altius.automation.TestAutomation |INFO | Valid UN is passed to the UN field
+2019-01-09 16:56:56,577 | com.altius.automation.TestAutomation |INFO | Valid password data is passed to the PW field
+2019-01-09 16:56:57,179 | com.altius.automation.TestAutomation |INFO | User able to login with Correct UN  &PW
+2019-01-09 16:56:57,999 | com.altius.automation.TestAutomation |INFO | Browser 
+2019-01-09 16:57:04,481 | com.altius.automation.TestAutomation |INFO | Valid UN is passed to the UN field
+2019-01-09 16:57:04,860 | com.altius.automation.TestAutomation |ERROR | Valid password is not passed to the PW field
+2019-01-09 16:57:15,516 | com.altius.automation.TestAutomation |ERROR | Drop down option of 100 is not get selected 
+2019-01-09 16:57:15,582 | com.altius.automation.TestAutomation |INFO | Drop down option is selected to list 100 entries and the number of entry is 0
+2019-01-09 16:57:15,655 | com.altius.automation.TestAutomation |ERROR | Value is not searched and edit button is not clicked
+2019-01-09 16:57:16,559 | com.altius.automation.TestAutomation |INFO | Browser 

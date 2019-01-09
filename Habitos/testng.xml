@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite thread-count="1" name="Suite" parallel ="tests"  >
+   <test  name="Browserlaunching"   >
     <classes>
-      <class name="com.altius.automation.TestAutomation"/>
+      <class name="com.altius.automation.Loginpage"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>  
+
+ <test  name="login">
+    <classes>
+      <class name="com.altius.automation.Allergy"/>
+    </classes>
+  </test> 
+</suite>
+
+
+
+

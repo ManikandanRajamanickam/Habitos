@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="16998" started-at="2019-01-09T07:53:07Z" finished-at="2019-01-09T07:53:24Z">
+  <suite name="Surefire suite" duration-ms="14256" started-at="2019-01-09T10:07:24Z" finished-at="2019-01-09T10:07:38Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="16998" started-at="2019-01-09T07:53:07Z" finished-at="2019-01-09T07:53:24Z">
+    <test name="Surefire test" duration-ms="14256" started-at="2019-01-09T10:07:24Z" finished-at="2019-01-09T10:07:38Z">
       <class name="com.altius.automation.TestAutomation">
-        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="browserlauching" is-config="true" duration-ms="13900" started-at="2019-01-09T07:53:07Z" finished-at="2019-01-09T07:53:21Z">
+        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="browserlauching" is-config="true" duration-ms="11739" started-at="2019-01-09T10:07:24Z" finished-at="2019-01-09T10:07:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlauching -->
-        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="OnlyCorrectUNPW" duration-ms="2241" started-at="2019-01-09T07:53:21Z" finished-at="2019-01-09T07:53:23Z">
+        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="OnlyCorrectUNPW" duration-ms="1538" started-at="2019-01-09T10:07:36Z" finished-at="2019-01-09T10:07:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnlyCorrectUNPW -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="browserclose" is-config="true" duration-ms="802" started-at="2019-01-09T07:53:23Z" finished-at="2019-01-09T07:53:24Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:com.altius.automation.TestAutomation@531be3c5]" name="browserclose" is-config="true" duration-ms="917" started-at="2019-01-09T10:07:37Z" finished-at="2019-01-09T10:07:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
