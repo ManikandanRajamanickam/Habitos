@@ -1392,7 +1392,7 @@ public class TestAutomation {
 	@BeforeTest()
    	public void browserlauching()
    	{
-	BasicConfigurator.configure();
+		PropertyConfigurator.configure("log4jproperties.txt");
 
 	System.setProperty("webdriver.chrome.driver", "../Habitos/src/test/resources/chromedriver.exe");
 	d = new ChromeDriver();
