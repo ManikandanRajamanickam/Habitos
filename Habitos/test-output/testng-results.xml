@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11725" started-at="2019-01-09T07:51:08Z" finished-at="2019-01-09T07:51:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11725" started-at="2019-01-09T07:51:08Z" finished-at="2019-01-09T07:51:19Z">
+      <class name="com.altius.automation.TestAutomation">
+        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.TestAutomation@1e7c7811]" name="browserlauching" is-config="true" duration-ms="8397" started-at="2019-01-09T07:51:08Z" finished-at="2019-01-09T07:51:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlauching -->
+        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:0, instance:com.altius.automation.TestAutomation@1e7c7811]" name="OnlyCorrectUNPW" duration-ms="2425" started-at="2019-01-09T07:51:16Z" finished-at="2019-01-09T07:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnlyCorrectUNPW -->
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:com.altius.automation.TestAutomation@1e7c7811]" name="browserclose" is-config="true" duration-ms="834" started-at="2019-01-09T07:51:18Z" finished-at="2019-01-09T07:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- com.altius.automation.TestAutomation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

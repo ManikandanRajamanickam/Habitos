@@ -1,0 +1,4 @@
+# Created at 2019-01-09T10:26:37.337
+Boot Manifest-JAR contains absolute paths in classpath 'path\to\additional\resources'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
