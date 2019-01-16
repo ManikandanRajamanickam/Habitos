@@ -26,7 +26,7 @@ public class Loginpage {
 
 	d.manage().window().maximize();
 	
-    logger.info("Anand_habitos branch is working fine");
+    
    	}
 	
 
@@ -39,6 +39,7 @@ public class Loginpage {
 	@Test(priority =1)
    public void WithoutUNPW() 
 	{
+		logger.info("Anand_habitos branch is working fine");
 			try {
 
 				d.findElement(By.name("commit")).click();
