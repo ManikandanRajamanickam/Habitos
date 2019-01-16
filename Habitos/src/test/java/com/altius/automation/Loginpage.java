@@ -26,7 +26,7 @@ public class Loginpage {
 
 	d.manage().window().maximize();
 	
-
+    logger.info("Anand_habitos branch is working fine");
    	}
 	
 
