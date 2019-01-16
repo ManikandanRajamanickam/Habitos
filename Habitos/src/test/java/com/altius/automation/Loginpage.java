@@ -236,6 +236,8 @@ public class Loginpage {
 	{
 		d.quit();
 		logger.info("Browser ");
+		
+		logger.info("Anand Habitos is working fine");
 	}
 	
 	
