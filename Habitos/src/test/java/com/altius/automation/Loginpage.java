@@ -39,7 +39,7 @@ public class Loginpage {
 	@Test(priority =1)
    public void WithoutUNPW() 
 	{
-		logger.info("Anand_habitos branch is working fine");
+		logger.info("Anand_habitos branch is working fine..");
 			try {
 
 				d.findElement(By.name("commit")).click();
