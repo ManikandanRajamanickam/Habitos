@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Habitos/src/test/java"/>
+	<classpathentry kind="lib" path="Habitos/lib/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/org.testng_6.14.2.r201802161450.jar"/>
+	<classpathentry kind="lib" path="Habitos/lib/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="Habitos/src/test/resources/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="Habitos/target/test-classes/log4j-1.2.16.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
