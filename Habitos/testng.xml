@@ -7,11 +7,11 @@
     </classes>
   </test>  
 
- <test  name="login">
+ <!-- <test  name="login">
     <classes>
       <class name="com.altius.automation.Allergy"/>
     </classes>
-  </test> 
+  </test> --> 
 </suite>
 
 
