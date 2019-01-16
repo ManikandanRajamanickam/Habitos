@@ -223,6 +223,9 @@ public class Loginpage {
 			d.findElement(By.name("commit")).click();
 
 			logger.info("User able to login with Correct UN  &PW");
+		
+		System.out.println("Login page is woriking fine........");
+		
 		}
 
 		
