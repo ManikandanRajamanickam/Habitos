@@ -225,7 +225,7 @@ public class Loginpage {
 
 			logger.info("User able to login with Correct UN  &PW");
 		
-		System.out.println("Login page is woriking fine for git testing........");
+		System.out.println("Login page is woriking fine for git testing...........");
 		
 		}
 
