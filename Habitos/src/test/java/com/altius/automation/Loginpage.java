@@ -187,18 +187,7 @@ public class Loginpage {
 			d.findElement(By.name("commit")).click();
 		}
 		
-		
 		@Test(priority =7)
-		public void rememberme()
-		{
-			WebElement rem =d.findElement(By.xpath("/html/body/div/div/div[2]/div/form/div/a"));
-			rem.click();
-			logger.info("");
-			
-			
-		}
-
-		@Test(priority =8)
 		public void OnlyCorrectUNPW() {
 			d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -237,7 +226,7 @@ public class Loginpage {
 		logger.info("Anand_habitos branch is working fine");
 
 		d.quit();
-		logger.info("Browser ");
+		logger.info("Browser");
 	}
 	
 	
