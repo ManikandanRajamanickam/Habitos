@@ -229,7 +229,7 @@ public class Loginpage {
 		
 		System.out.println("Login page is woriking fine for git testing...........");
 		
-		logger.info("Anand Habitos is working fine.");
+		logger.info("Anand Habitos branch is working fine.");
 
 		}
 
