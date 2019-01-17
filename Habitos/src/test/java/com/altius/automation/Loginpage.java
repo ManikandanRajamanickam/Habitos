@@ -236,7 +236,7 @@ public class Loginpage {
 	{
 		d.quit();
 		logger.info("Browser ");
-		
+		logger.info("Anand_habitos branch is working fine");
 	}
 	
 	
