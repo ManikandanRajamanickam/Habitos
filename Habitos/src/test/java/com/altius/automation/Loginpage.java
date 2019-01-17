@@ -25,6 +25,8 @@ public class Loginpage {
 	d.get("http://192.168.1.73:3004/");
 
 	d.manage().window().maximize();
+
+   
 	System.out.println("Mani_habitos is working fine");
 
    	}
@@ -39,6 +41,7 @@ public class Loginpage {
 	@Test(priority =1)
    public void WithoutUNPW() 
 	{
+		logger.info("Anand_habitos branch is working fine..");
 			try {
 
 				d.findElement(By.name("commit")).click();
@@ -224,8 +227,10 @@ public class Loginpage {
 
 			logger.info("User able to login with Correct UN  &PW");
 		
-		System.out.println("Login page is woriking fine for git testing........");
+		System.out.println("Login page is woriking fine for git testing...........");
 		
+		logger.info("Anand Habitos branch is working fine.");
+
 		}
 
 		
@@ -235,6 +240,7 @@ public class Loginpage {
 	{
 		d.quit();
 		logger.info("Browser ");
+		
 	}
 	
 	
