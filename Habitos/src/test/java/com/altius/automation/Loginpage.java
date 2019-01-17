@@ -223,7 +223,7 @@ public class Loginpage {
 	@AfterTest()
 	public void aftertest()
 	{
-		logger.info("Anand_habitos branch is working fine");
+		logger.info("Mani_habitos branch is working fine");
 
 		d.quit();
 		logger.info("Browser");
