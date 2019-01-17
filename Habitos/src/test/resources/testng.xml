@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="altiusTestSuite">
-  <test name="TestSample">
+   <test  name="Browserlaunching"   >
     <classes>
-      <class name="com.altius.main.TestAutomation"/>
+      <class name="com.altius.automation.Loginpage"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  
+
+  <!-- <test  name="login">
+    <classes>
+      <class name="com.altius.automation.Allergy"/>
+    </classes>
+  </test>  -->
 </suite> <!-- Suite -->

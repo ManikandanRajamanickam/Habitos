@@ -23,3 +23,22 @@
 2019-01-09 16:57:15,582 [TestNG-tests-1] INFO com.altius.automation.TestAutomation - Drop down option is selected to list 100 entries and the number of entry is 0
 2019-01-09 16:57:15,655 [TestNG-tests-1] ERROR com.altius.automation.TestAutomation - Value is not searched and edit button is not clicked
 2019-01-09 16:57:16,559 [TestNG-tests-1] INFO com.altius.automation.TestAutomation - Browser 
+2019-01-17 14:37:10,527 [main] INFO com.altius.automation.TestAutomation - Invalid data is successfully passed through the Username field
+2019-01-17 14:37:11,175 [main] INFO com.altius.automation.TestAutomation - Submit button is successfully cliked after invalid data is passed through the username field
+2019-01-17 14:37:11,433 [main] INFO com.altius.automation.TestAutomation - Wrong password                
+2019-01-17 14:37:11,725 [main] INFO com.altius.automation.TestAutomation - Invalid password is entered through the password field
+2019-01-17 14:37:11,883 [main] INFO com.altius.automation.TestAutomation - User unable to login with wrong PW
+2019-01-17 14:37:12,146 [main] INFO com.altius.automation.TestAutomation - Checking the wrong UN and PW                      
+2019-01-17 14:37:12,499 [main] INFO com.altius.automation.TestAutomation - Invalid Username is entered to the UN field
+2019-01-17 14:37:12,669 [main] INFO com.altius.automation.TestAutomation - Invalid password is entered to the PW field
+2019-01-17 14:37:13,176 [main] INFO com.altius.automation.TestAutomation - Submit is clicked after Wrong UN and PW
+2019-01-17 14:37:13,178 [main] INFO com.altius.automation.TestAutomation - Validation is raised and User unable to login with wrong UN & PW
+2019-01-17 14:37:13,733 [main] INFO com.altius.automation.TestAutomation - Valid User name is passed to the UN field
+2019-01-17 14:37:13,950 [main] INFO com.altius.automation.TestAutomation - Submit button is clicked after the valid UN is passed to the UN field
+2019-01-17 14:37:13,951 [main] INFO com.altius.automation.TestAutomation - User Unable to login with only correct UN
+2019-01-17 14:37:14,605 [main] INFO com.altius.automation.TestAutomation - Only valid password data is passed to the password field 
+2019-01-17 14:37:15,560 [main] INFO com.altius.automation.TestAutomation - Valid UN is passed to the UN field
+2019-01-17 14:37:15,732 [main] INFO com.altius.automation.TestAutomation - Valid password data is passed to the PW field
+2019-01-17 14:37:16,190 [main] INFO com.altius.automation.TestAutomation - User able to login with Correct UN  &PW
+2019-01-17 14:37:16,195 [main] INFO com.altius.automation.TestAutomation - Anand_habitos branch is working fine
+2019-01-17 14:37:17,068 [main] INFO com.altius.automation.TestAutomation - Browser
