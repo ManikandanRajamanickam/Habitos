@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16572" started-at="2019-01-17T09:07:00Z" finished-at="2019-01-17T09:07:17Z">
+  <suite name="Default suite" duration-ms="20245" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16572" started-at="2019-01-17T09:07:00Z" finished-at="2019-01-17T09:07:17Z">
+    <test name="Default test" duration-ms="20245" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:54Z">
       <class name="com.altius.automation.Loginpage">
-        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="browserlauching" is-config="true" duration-ms="8580" started-at="2019-01-17T09:07:00Z" finished-at="2019-01-17T09:07:09Z">
+        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="browserlauching" is-config="true" duration-ms="13975" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlauching -->
-        <test-method status="PASS" signature="WithoutUNPW()[pri:1, instance:com.altius.automation.Loginpage@371a67ec]" name="WithoutUNPW" duration-ms="517" started-at="2019-01-17T09:07:09Z" finished-at="2019-01-17T09:07:09Z">
+        <test-method status="PASS" signature="WithoutUNPW()[pri:1, instance:com.altius.automation.Loginpage@371a67ec]" name="WithoutUNPW" duration-ms="428" started-at="2019-01-17T11:11:48Z" finished-at="2019-01-17T11:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WithoutUNPW -->
-        <test-method status="PASS" signature="wrongUN()[pri:2, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUN" duration-ms="1774" started-at="2019-01-17T09:07:09Z" finished-at="2019-01-17T09:07:11Z">
+        <test-method status="PASS" signature="wrongUN()[pri:2, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUN" duration-ms="1021" started-at="2019-01-17T11:11:48Z" finished-at="2019-01-17T11:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUN -->
-        <test-method status="PASS" signature="wrongPW()[pri:3, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongPW" duration-ms="708" started-at="2019-01-17T09:07:11Z" finished-at="2019-01-17T09:07:12Z">
+        <test-method status="PASS" signature="wrongPW()[pri:3, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongPW" duration-ms="631" started-at="2019-01-17T11:11:49Z" finished-at="2019-01-17T11:11:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongPW -->
-        <test-method status="PASS" signature="wrongUNPW()[pri:4, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUNPW" duration-ms="1036" started-at="2019-01-17T09:07:12Z" finished-at="2019-01-17T09:07:13Z">
+        <test-method status="PASS" signature="wrongUNPW()[pri:4, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUNPW" duration-ms="900" started-at="2019-01-17T11:11:50Z" finished-at="2019-01-17T11:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUNPW -->
-        <test-method status="PASS" signature="OnlyCorrectUN()[pri:5, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUN" duration-ms="768" started-at="2019-01-17T09:07:13Z" finished-at="2019-01-17T09:07:13Z">
+        <test-method status="PASS" signature="OnlyCorrectUN()[pri:5, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUN" duration-ms="762" started-at="2019-01-17T11:11:51Z" finished-at="2019-01-17T11:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnlyCorrectUN -->
-        <test-method status="PASS" signature="OnlycorrectPW()[pri:6, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlycorrectPW" duration-ms="792" started-at="2019-01-17T09:07:13Z" finished-at="2019-01-17T09:07:14Z">
+        <test-method status="PASS" signature="OnlycorrectPW()[pri:6, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlycorrectPW" duration-ms="570" started-at="2019-01-17T11:11:51Z" finished-at="2019-01-17T11:11:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnlycorrectPW -->
-        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:7, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUNPW" duration-ms="1438" started-at="2019-01-17T09:07:14Z" finished-at="2019-01-17T09:07:16Z">
+        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:7, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUNPW" duration-ms="1087" started-at="2019-01-17T11:11:52Z" finished-at="2019-01-17T11:11:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnlyCorrectUNPW -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="aftertest" is-config="true" duration-ms="873" started-at="2019-01-17T09:07:16Z" finished-at="2019-01-17T09:07:17Z">
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="aftertest" is-config="true" duration-ms="766" started-at="2019-01-17T11:11:53Z" finished-at="2019-01-17T11:11:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
