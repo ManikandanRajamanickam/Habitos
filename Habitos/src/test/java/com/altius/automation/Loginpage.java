@@ -27,7 +27,6 @@ public class Loginpage {
 	d.manage().window().maximize();
 
    
-	System.out.println("Mani_habitos is working fine");
 
    	}
 	
@@ -41,7 +40,6 @@ public class Loginpage {
 	@Test(priority =1)
    public void WithoutUNPW() 
 	{
-		logger.info("Anand_habitos branch is working fine..");
 			try {
 
 				d.findElement(By.name("commit")).click();
@@ -229,7 +227,6 @@ public class Loginpage {
 		
 		System.out.println("Login page is woriking fine for git testing...........");
 		
-		logger.info("Anand Habitos branch is working fine.");
 
 		}
 
