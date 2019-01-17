@@ -25,8 +25,10 @@ public class Loginpage {
 	d.get("http://192.168.1.73:3004/");
 
 	d.manage().window().maximize();
-	
-    
+
+   
+	System.out.println("Mani_habitos is working fine");
+
    	}
 	
 
