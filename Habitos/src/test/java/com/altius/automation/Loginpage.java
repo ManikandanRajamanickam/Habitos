@@ -227,6 +227,8 @@ public class Loginpage {
 		
 		System.out.println("Login page is woriking fine for git testing...........");
 		
+		logger.info("Anand Habitos is working fine");
+
 		}
 
 		
@@ -237,7 +239,6 @@ public class Loginpage {
 		d.quit();
 		logger.info("Browser ");
 		
-		logger.info("Anand Habitos is working fine");
 	}
 	
 	
