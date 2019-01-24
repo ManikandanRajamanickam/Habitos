@@ -1,7 +1,6 @@
 package com.altius.automation;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -10,11 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Allergy {
+public class Itemcategory {
 	WebDriver d;
     Logger logger =Logger.getLogger(TestAutomation.class);
 
@@ -28,43 +26,39 @@ public class Allergy {
 	
 	d.get("http://192.168.1.18:85/");
 
-	d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	   
-	WebElement un=d.findElement(By.id("kitchen_user_user_name"));
-	WebElement pw=d.findElement(By.id("kitchen_user_password_digest"));
-	un.clear();
-	pw.clear();
-
-
-	try {
-    un.sendKeys("vivek");
-	logger.info("Valid UN is passed to the UN field");
-	}
-	catch (Exception e) {
-		logger.error(e);
-		logger.error("Valid data is not passed to the UN field");
-
-	}
+	d.manage().window().maximize();
 	
-	try {	
-		
-		pw.sendKeys("vivek");
-		logger.info("Valid password data is passed to the PW field");
-	} 
-	catch (Exception e) {
-
+	
+    try
+    {
+    	
+    	d.findElement(By.id("kitchen_user_user_name")).clear();
+		d.findElement(By.id("kitchen_user_user_name")).sendKeys("Vivek");
+		logger.info("Valid UN is passed to the UN field");
+    }
+    catch(Exception e)
+    {
+    	
+    	logger.error("Valid UN data is not passed");
+    }
+    try
+    {
+    	d.findElement(By.id("kitchen_user_password_digest")).clear();
+     
+		d.findElement(By.id("kitchen_user_password_digest")).sendKeys("Vivek");
+    }
+    catch(Exception e)
+    {
 		logger.error("Valid password is not passed to the PW field");
+    }
+	d.findElement(By.name("commit")).click();
 
-	}
-    WebElement click=d.findElement(By.name("commit"));
-     click.click();
-		logger.info("User able to login with Correct UN  &PW");
-
-
-}
-	@Test(priority=1)
-	public void allergyinsert() throws InterruptedException
+  	}
+	
+	@Test(priority =1)
+	public void itemcategoryinsert() throws InterruptedException
 	{
+
 		d.findElement(By.xpath("/html/body/div/div/header/nav/div/ul/li[1]/a/i")).click();
 		// master module
 		try
@@ -75,39 +69,33 @@ public class Allergy {
 		}
 		catch(Exception e)
 		{
-			
 			logger.error("Master side bar is not get clicked");
-			
-			
 		}
 		Thread.sleep(2000);
-		//Allergy module button
+		//Item category module button
 		try
 		{
-			WebElement master=d.findElement(By.linkText("Allergy"));
+			WebElement master=d.findElement(By.linkText("Item Category"));
 			master.click();
-			logger.info("Allergy button - side bar is clicked successfully");
+			logger.info("Item category - side bar is clicked successfully");
 		}
 		catch(Exception e)
 		{
 			
-			logger.error("Allergy button - side bar is not get clicked");
-			
-			
+			logger.error("Item category - side bar is not get clicked");
 		}
 		Thread.sleep(2000);
 		
-//  New allergy button
+//  New Item category button
 		try
 		{                                              
 			WebElement master=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[1]/h3/span/a"));
 			master.click();
-			logger.info("New Allergy button is clicked successfully");
+			logger.info("New Item category button is clicked successfully");
 		}
 		catch(Exception e)
 		{
-			
-			logger.error("New allergy button is not get clicked");
+			logger.error("New Item catgeory button is not get clicked");
 			
 		}
 		// Back button
@@ -124,15 +112,16 @@ public class Allergy {
 			
 		}
 		
-		
 		// Again clicking the new allergy button
 		try {
 			WebElement master = d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[1]/h3/span/a"));
 			master.click();
-			logger.info("New Allergy button is again clicked successfully");
-		} catch (Exception e) {
+			logger.info("New Item category button is again clicked successfully");
+		}
+		catch (Exception e)
+		{
 
-			logger.error("New allergy button is not again clicked");
+			logger.error("New Item category button is not again clicked");
 
 		}
 		// Validating the allergy screen
@@ -140,35 +129,36 @@ public class Allergy {
 			WebElement allergy = d.findElement(By.name("commit"));
 			allergy.click();
 			logger.info("Submit button is clicked successfully - to check validation");
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 
 			logger.error("Submit button is not clicked successfully - to check validation");
-
 		}
 		// Numeric values  passing to allergy field
 		try {
-			WebElement allergy = d.findElement(By.id("allery_name"));
+			WebElement allergy = d.findElement(By.id("category_category_name"));
 			allergy.sendKeys("12345");
-			logger.error("Numeric value is accepting in allergy name field");
-		} catch (Exception e) {
+			logger.error("Numeric value is accepting in category field");
+		}
+		catch (Exception e)
+		{
 
 			logger.info("Numeric value is not accepting");
-
 		}
 
 		// Allergy name restricting upto 20 characters
 		try {
-			WebElement allergy = d.findElement(By.id("allery_name"));
+			WebElement allergy = d.findElement(By.id("category_category_name"));
 			allergy.clear();
 
 			allergy.sendKeys("adnhufherfuljikdhfnduk");
 
-			logger.error("Allergy field is accepting more than 20 characters");
+			logger.error("Category field is accepting more than 20 characters");
 		}
 		catch(Exception e)
 		{
 			
-			logger.info("Allergy field is not accepting more than 20 characters");
+			logger.info("Category field is not accepting more than 20 characters");
 			
 		}
 		
@@ -177,10 +167,10 @@ public class Allergy {
 		Thread.sleep(2000);
 		
 
-		WebElement allergynew = d.findElement(By.id("allery_name"));
+		WebElement allergynew = d.findElement(By.id("category_category_name"));
 		allergynew.clear();
 
-		allergynew.sendKeys("Brinjal cutt");
+		allergynew.sendKeys("Lunch");
 		WebElement submit = d.findElement(By.name("commit"));
 		submit.click();
 		submit.click();
@@ -192,17 +182,15 @@ public class Allergy {
 		{
 			for (int i = 0; i <= 100; i++) 
 			{
-				String a = "Egg";
-				WebElement allergy = d.findElement(By.id("allery_name"));
-				// String b =allergy.getAttribute("Value");
-				// int i=1;
+				String a = "Lunch";
+				WebElement allergy = d.findElement(By.id("category_category_name"));
 				String c = a + i;
 				allergy.clear();
 				allergy.sendKeys(c);
 				WebElement submit1 = d.findElement(By.name("commit"));
 				submit1.click();
 				submit1.click();
-			    String url ="http://192.168.1.18:85/alleries?notice=Allery+was+successfully+created.";
+			    String url ="http://192.168.1.18:85/categories?notice=Category+was+successfully+created.";
 			    if(url.equals(d.getCurrentUrl()))
 					{
                        i =100;				
@@ -213,12 +201,12 @@ public class Allergy {
 				if(c.equals(row1.getText()))
 				{
 					
-					logger.info("Allergy is inserted successfully");
+					logger.info("New Item category is inserted successfully");
 					
 				}
 				else
 				{
-					logger.info("Allergy is not inserted successfully");
+					logger.info("New Item category is not inserted successfully");
 					
 				}
 					}
@@ -226,17 +214,15 @@ public class Allergy {
 			
 		}
 	}
-		
-	
 	@Test(priority=2)
-	public void allergyupdate()
+	public void Itemcategoryupdate()
 	{
 	// 	
-		d.get("http://192.168.1.18:85/alleries");
+		d.get("http://192.168.1.18:85/categories");
 
 		//  Choosing the drop drown option
 	 try {
-		Select dropdown =new Select (d.findElement(By.name("allery_length")));
+		Select dropdown =new Select (d.findElement(By.name("category_length")));
 		dropdown.selectByValue("100");
 		logger.info("Drop down option of 100 is selected successfully");
 	     }
@@ -255,25 +241,60 @@ public class Allergy {
 	   
 	
 	// Searching and finding an option
-	   try
-	   {
-	 WebElement search=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/div[2]/label/input"));       
-		search.sendKeys("egg");
-       WebElement update=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/table/tbody/tr[1]/td[5]/a"));
+	   try  
+	   {                                       
+	 WebElement search=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[1]/div[2]/label/input"));       
+		search.sendKeys("Lunch");
+       WebElement update=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[1]/table/tbody/tr[1]/td[1]"));
        update.click();
 	    logger.info("Value is searched and edit button is clicked successfully");
-	}
+	   }
 	   catch(Exception e)
 	   {
 		  logger.error("Value is not searched and edit button is not clicked"); 
 		   
 	   }
+	   // Viewing the item categroy information
+	
+	   try
+	   {
+		WebElement view =d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[2]/ul/li[1]/a/i"));   
+		   
+		view.click();
+		logger.info("View button is clicked successfully");
+	   }
+	   catch(Exception e)
+	   {
+		   
+		   logger.error("View button is not clicked");
+		   
+	   }
+	// Back button
+			try
+			{
+				WebElement allergy=d.findElement(By.linkText("Back"));
+				allergy.click();
+				logger.info("Back button is clicked successfully");
+			}
+			catch(Exception e)
+			{
+				
+				logger.error("Back button is not clicked");
+				
+			}
+			
+			// Update
+			
+				
+			WebElement update=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[1]/table/tbody/tr[1]/td[1]"));
+		       update.click();
+		    d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[2]/ul/li[2]/a/i")).click();   
+	   
 	// Deleting the existing value and passing the new value
-	   WebElement allergynew = d.findElement(By.id("allery_name"));
+	   WebElement allergynew = d.findElement(By.id("category_category_name"));
 		allergynew.clear();
-	   allergynew.sendKeys("shell fish");
+	   allergynew.sendKeys("Tea - Break");
 		WebElement submit = d.findElement(By.name("commit"));
-		submit.click();
 		submit.click();
 
 		String alert = "has already been taken";
@@ -283,8 +304,8 @@ public class Allergy {
 		{
 			for (int i = 0; i <= 100; i++) 
 			{
-				String a = "Shell fish";
-				WebElement allergy = d.findElement(By.id("allery_name"));
+				String a = "Tea - Break";
+				WebElement allergy = d.findElement(By.id("category_category_name"));
 				// String b =allergy.getAttribute("Value");
 				// int i=1;
 				String c = a + i;
@@ -292,9 +313,7 @@ public class Allergy {
 				allergy.sendKeys(c);
 				WebElement submit1 = d.findElement(By.name("commit"));
 				submit1.click();
-				submit1.click();
-
-			    String url ="http://192.168.1.18:85/alleries?notice=Allery+was+successfully+updated.";
+			    String url ="http://192.168.1.18:85/categories?notice=Category+was+successfully+updated.";
 			    if(url.equals(d.getCurrentUrl()))
 					{
                       i =100;				
@@ -304,27 +323,19 @@ public class Allergy {
                WebElement row1=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/table/tbody/tr[1]/td[1]"));
 				if(c.equals(row1.getText()))
 				{
-					
-					logger.info("Allergy is updated successfully");
+					logger.info("Item category is updated successfully");
 					
 				}
 				else
 				{
-					logger.info("Allergy is not updated ");
+					logger.info("Item category is not updated ");
 					
 				}
 					}
 			}
 			
-		
-		
 		}
-	}	
-	@AfterTest()
-	public void aftertest()
-	{
-		d.quit();
-		logger.info("Browser ");
-	}
+	}			
 	
+
 }

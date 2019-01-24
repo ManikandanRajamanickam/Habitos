@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20245" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:54Z">
+  <suite name="Default suite" duration-ms="67741" started-at="2019-01-24T09:51:36Z" finished-at="2019-01-24T09:52:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20245" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:54Z">
-      <class name="com.altius.automation.Loginpage">
-        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="browserlauching" is-config="true" duration-ms="13975" started-at="2019-01-17T11:11:34Z" finished-at="2019-01-17T11:11:48Z">
+    <test name="Default test" duration-ms="67741" started-at="2019-01-24T09:51:36Z" finished-at="2019-01-24T09:52:44Z">
+      <class name="com.altius.automation.Allergy">
+        <test-method status="PASS" signature="browserlauching()[pri:0, instance:com.altius.automation.Allergy@371a67ec]" name="browserlauching" is-config="true" duration-ms="13769" started-at="2019-01-24T09:51:36Z" finished-at="2019-01-24T09:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlauching -->
-        <test-method status="PASS" signature="WithoutUNPW()[pri:1, instance:com.altius.automation.Loginpage@371a67ec]" name="WithoutUNPW" duration-ms="428" started-at="2019-01-17T11:11:48Z" finished-at="2019-01-17T11:11:48Z">
+        <test-method status="PASS" signature="allergyinsert()[pri:1, instance:com.altius.automation.Allergy@371a67ec]" name="allergyinsert" duration-ms="34947" started-at="2019-01-24T09:51:50Z" finished-at="2019-01-24T09:52:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WithoutUNPW -->
-        <test-method status="PASS" signature="wrongUN()[pri:2, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUN" duration-ms="1021" started-at="2019-01-17T11:11:48Z" finished-at="2019-01-17T11:11:49Z">
+        </test-method> <!-- allergyinsert -->
+        <test-method status="PASS" signature="allergyupdate()[pri:2, instance:com.altius.automation.Allergy@371a67ec]" name="allergyupdate" duration-ms="17613" started-at="2019-01-24T09:52:25Z" finished-at="2019-01-24T09:52:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wrongUN -->
-        <test-method status="PASS" signature="wrongPW()[pri:3, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongPW" duration-ms="631" started-at="2019-01-17T11:11:49Z" finished-at="2019-01-17T11:11:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongPW -->
-        <test-method status="PASS" signature="wrongUNPW()[pri:4, instance:com.altius.automation.Loginpage@371a67ec]" name="wrongUNPW" duration-ms="900" started-at="2019-01-17T11:11:50Z" finished-at="2019-01-17T11:11:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongUNPW -->
-        <test-method status="PASS" signature="OnlyCorrectUN()[pri:5, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUN" duration-ms="762" started-at="2019-01-17T11:11:51Z" finished-at="2019-01-17T11:11:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnlyCorrectUN -->
-        <test-method status="PASS" signature="OnlycorrectPW()[pri:6, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlycorrectPW" duration-ms="570" started-at="2019-01-17T11:11:51Z" finished-at="2019-01-17T11:11:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnlycorrectPW -->
-        <test-method status="PASS" signature="OnlyCorrectUNPW()[pri:7, instance:com.altius.automation.Loginpage@371a67ec]" name="OnlyCorrectUNPW" duration-ms="1087" started-at="2019-01-17T11:11:52Z" finished-at="2019-01-17T11:11:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnlyCorrectUNPW -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.altius.automation.Loginpage@371a67ec]" name="aftertest" is-config="true" duration-ms="766" started-at="2019-01-17T11:11:53Z" finished-at="2019-01-17T11:11:54Z">
+        </test-method> <!-- allergyupdate -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.altius.automation.Allergy@371a67ec]" name="aftertest" is-config="true" duration-ms="1293" started-at="2019-01-24T09:52:42Z" finished-at="2019-01-24T09:52:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
-      </class> <!-- com.altius.automation.Loginpage -->
+      </class> <!-- com.altius.automation.Allergy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -22,7 +22,7 @@ public class Loginpage {
 	System.setProperty("webdriver.chrome.driver", "../Habitos/src/test/resources/chromedriver.exe");
 	d = new ChromeDriver();
 	
-	d.get("http://192.168.1.73:3004/");
+	d.get("http://192.168.1.18:85/");
 
 	d.manage().window().maximize();
 
@@ -190,30 +190,36 @@ public class Loginpage {
 		@Test(priority =7)
 		public void OnlyCorrectUNPW() {
 			d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   
+			WebElement un=d.findElement(By.id("kitchen_user_user_name"));
+			WebElement pw=d.findElement(By.id("kitchen_user_password_digest"));
+			un.clear();
+			pw.clear();
 
-			d.findElement(By.id("kitchen_user_user_name")).clear();
-			d.findElement(By.id("kitchen_user_password_digest")).clear();
 
 			try {
-				d.findElement(By.id("kitchen_user_user_name")).sendKeys("Vivek");
-				logger.info("Valid UN is passed to the UN field");
-			} catch (Exception e) {
+		    un.sendKeys("vivek");
+			logger.info("Valid UN is passed to the UN field");
+			}
+			catch (Exception e) {
 				logger.error(e);
 				logger.error("Valid data is not passed to the UN field");
 
 			}
-			try {
-				d.findElement(By.id("kitchen_user_password_digest")).sendKeys("Vivek");
+			
+			try {	
+				
+				pw.sendKeys("vivek");
 				logger.info("Valid password data is passed to the PW field");
-			} catch (Exception e) {
+			} 
+			catch (Exception e) {
 
 				logger.error("Valid password is not passed to the PW field");
 
 			}
-			d.findElement(By.name("commit")).click();
-
-			logger.info("User able to login with Correct UN  &PW");
-		
+            WebElement click=d.findElement(By.name("commit"));
+             click.click();
+    			logger.info("User able to login with Correct UN  &PW");
 		
 
 		}
@@ -225,7 +231,7 @@ public class Loginpage {
 	{
 		logger.info("Mani_habitos branch is working fine");
 
-		d.quit();
+	d.quit();
 		logger.info("Browser");
 	}
 	

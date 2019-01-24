@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.altius.automation.TestAutomation">
+      <class name="com.altius.automation.Allergy">
         <methods>
+          <include name="allergyupdate"/>
           <include name="browserlauching"/>
-          <include name="OnlyCorrectUNPW"/>
-          <include name="browserclose"/>
+          <include name="aftertest"/>
         </methods>
-      </class> <!-- com.altius.automation.TestAutomation -->
+      </class> <!-- com.altius.automation.Allergy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
