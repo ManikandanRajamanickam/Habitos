@@ -9,12 +9,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Itemcategory {
 	WebDriver d;
-    Logger logger =Logger.getLogger(TestAutomation.class);
+    Logger logger =Logger.getLogger(Itemcategory.class);
 
 	@BeforeTest()
   	public void browserlauching()
@@ -33,7 +34,7 @@ public class Itemcategory {
     {
     	
     	d.findElement(By.id("kitchen_user_user_name")).clear();
-		d.findElement(By.id("kitchen_user_user_name")).sendKeys("Vivek");
+		d.findElement(By.id("kitchen_user_user_name")).sendKeys("vivek");
 		logger.info("Valid UN is passed to the UN field");
     }
     catch(Exception e)
@@ -45,7 +46,7 @@ public class Itemcategory {
     {
     	d.findElement(By.id("kitchen_user_password_digest")).clear();
      
-		d.findElement(By.id("kitchen_user_password_digest")).sendKeys("Vivek");
+		d.findElement(By.id("kitchen_user_password_digest")).sendKeys("vivek");
     }
     catch(Exception e)
     {
@@ -296,6 +297,7 @@ public class Itemcategory {
 	   allergynew.sendKeys("Tea - Break");
 		WebElement submit = d.findElement(By.name("commit"));
 		submit.click();
+		submit.click();
 
 		String alert = "has already been taken";
 		WebElement alert1 = d.findElement( By.xpath("/html/body/div/div/div[2]/div[4]/div/form/article/div[2]/div/div/div/div/label"));
@@ -312,6 +314,7 @@ public class Itemcategory {
 				allergy.clear();
 				allergy.sendKeys(c);
 				WebElement submit1 = d.findElement(By.name("commit"));
+				submit1.click();
 				submit1.click();
 			    String url ="http://192.168.1.18:85/categories?notice=Category+was+successfully+updated.";
 			    if(url.equals(d.getCurrentUrl()))
@@ -336,6 +339,14 @@ public class Itemcategory {
 			
 		}
 	}			
+	
+	@AfterTest()
+	public void aftertest()
+	{
+		d.quit();
+		logger.info("Browser is closed successfully ");
+	}
+	
 	
 
 }
