@@ -14,9 +14,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Allergy {
+public class Mealrestriction {
+
 	WebDriver d;
-    Logger logger =Logger.getLogger(Allergy.class);
+    Logger logger =Logger.getLogger(Mealrestriction.class);
 
 	@BeforeTest()
   	public void browserlauching()
@@ -84,14 +85,14 @@ public class Allergy {
 		//Allergy module button
 		try
 		{
-			WebElement master=d.findElement(By.linkText("Allergy"));
+			WebElement master=d.findElement(By.linkText("Meal Restriction"));
 			master.click();
-			logger.info("Allergy button - side bar is clicked successfully");
+			logger.info("Meal Restriction - side bar is clicked successfully");
 		}
 		catch(Exception e)
 		{
 			
-			logger.error("Allergy button - side bar is not get clicked");
+			logger.error("Meal Restriction - side bar is not get clicked");
 			
 			
 		}
@@ -102,12 +103,12 @@ public class Allergy {
 		{                                              
 			WebElement master=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[1]/h3/span/a"));
 			master.click();
-			logger.info("New Allergy button is clicked successfully");
+			logger.info("New Meal Restriction button is clicked successfully");
 		}
 		catch(Exception e)
 		{
 			
-			logger.error("New allergy button is not get clicked");
+			logger.error("New Meal restriction button is not get clicked");
 			
 		}
 		// Back button
@@ -129,10 +130,10 @@ public class Allergy {
 		try {
 			WebElement master = d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[1]/h3/span/a"));
 			master.click();
-			logger.info("New Allergy button is again clicked successfully");
+			logger.info("New Meal Retriction button is again clicked successfully");
 		} catch (Exception e) {
 
-			logger.error("New allergy button is not again clicked");
+			logger.error("New Meal restriction button is not again clicked");
 
 		}
 		// Validating the allergy screen
@@ -140,14 +141,15 @@ public class Allergy {
 			WebElement allergy = d.findElement(By.name("commit"));
 			allergy.click();
 			logger.info("Submit button is clicked successfully - to check validation");
-		} catch (Exception e) {
+		} 
+		catch (Exception e) {
 
 			logger.error("Submit button is not clicked successfully - to check validation");
 
 		}
 		// Numeric values  passing to allergy field
 		try {
-			WebElement allergy = d.findElement(By.id("allery_name"));
+			WebElement allergy = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 			allergy.sendKeys("12345");
 			logger.error("Numeric value is accepting in allergy name field");
 		} catch (Exception e) {
@@ -158,7 +160,7 @@ public class Allergy {
 
 		// Allergy name restricting upto 20 characters
 		try {
-			WebElement allergy = d.findElement(By.id("allery_name"));
+			WebElement allergy = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 			allergy.clear();
 
 			allergy.sendKeys("adnhufherfuljikdhfnduk");
@@ -177,7 +179,7 @@ public class Allergy {
 		Thread.sleep(2000);
 		
 
-		WebElement allergynew = d.findElement(By.id("allery_name"));
+		WebElement allergynew = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 		allergynew.clear();
 
 		allergynew.sendKeys("Brinjal cutt");
@@ -192,8 +194,8 @@ public class Allergy {
 		{
 			for (int i = 0; i <= 100; i++) 
 			{
-				String a = "Egg";
-				WebElement allergy = d.findElement(By.id("allery_name"));
+				String a = "Brinjal cutt";
+				WebElement allergy = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 				// String b =allergy.getAttribute("Value");
 				// int i=1;
 				String c = a + i;
@@ -202,23 +204,24 @@ public class Allergy {
 				WebElement submit1 = d.findElement(By.name("commit"));
 				submit1.click();
 				submit1.click();
-			    String url ="http://192.168.1.18:85/alleries?notice=Allery+was+successfully+created.";
-			    if(url.equals(d.getCurrentUrl()))
-					{
-                       i =100;				
-           //  search box 
-                WebElement search=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/div[2]/label/input"));       
-				search.sendKeys(c);
-                WebElement row1=d.findElement(By.xpath("/html/body/div/div/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/table/tbody/tr[1]/td[1]"));
-				if(c.equals(row1.getText()))
+			
+              List <WebElement> mr =d.findElements(By.xpath("//*[@id=\"sitelist\"]/tbody/tr/td[1]"));
+				System.out.println("The size is "+mr.size());
+				
+				for(int j=1;j<=mr.size();j++)
 				{
+					WebElement row =d.findElement(By.xpath("//*[@id=\\\"sitelist\\\"]/tbody/tr["+j+"]/td[1]"));
 					
-					logger.info("Allergy is inserted successfully");
+				
+                if(c.equals(row.getText()))
+				   {
 					
-				}
+					logger.info("Meal course is inserted successfully");
+					
+				   }
 				else
 				{
-					logger.info("Allergy is not inserted successfully");
+					logger.info("Meal course is not inserted successfully");
 					
 				}
 					}
@@ -232,7 +235,7 @@ public class Allergy {
 	public void allergyupdate()
 	{
 	// 	
-		d.get("http://192.168.1.18:85/alleries");
+		d.get("http://192.168.1.18:85/meal_restrictions");
 
 		//  Choosing the drop drown option
 	 try {
@@ -269,7 +272,7 @@ public class Allergy {
 		   
 	   }
 	// Deleting the existing value and passing the new value
-	   WebElement allergynew = d.findElement(By.id("allery_name"));
+	   WebElement allergynew = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 		allergynew.clear();
 	   allergynew.sendKeys("shell fish");
 		WebElement submit = d.findElement(By.name("commit"));
@@ -284,7 +287,7 @@ public class Allergy {
 			for (int i = 0; i <= 100; i++) 
 			{
 				String a = "Shell fish";
-				WebElement allergy = d.findElement(By.id("allery_name"));
+				WebElement allergy = d.findElement(By.id("meal_restriction_meal_restriction_name"));
 				// String b =allergy.getAttribute("Value");
 				// int i=1;
 				String c = a + i;
@@ -294,7 +297,7 @@ public class Allergy {
 				submit1.click();
 				submit1.click();
 
-			    String url ="http://192.168.1.18:85/alleries?notice=Allery+was+successfully+updated.";
+			    String url ="http://192.168.1.18:85/meal_restrictions?notice=Meal+restriction+was+successfully+updated.";
 			    if(url.equals(d.getCurrentUrl()))
 					{
                       i =100;				
@@ -315,6 +318,7 @@ public class Allergy {
 				}
 					}
 			}
+			
 		
 		
 		}
@@ -327,3 +331,4 @@ public class Allergy {
 	}
 	
 }
+

@@ -12,4 +12,22 @@
       <class name="com.altius.automation.Allergy"/>
     </classes>
   </test>  -->
+  
+  <test  name="Browserlaunching"   >
+    <classes>
+      <class name="com.altius.automation.Itemcategory"/>
+    </classes>
+  </test> 
+   <test  name="Browserlaunching"   >
+    <classes>
+      <class name="com.altius.automation.Mealtype"/>
+    </classes>
+  </test>  
+   <test  name="Browserlaunching"   >
+    <classes>
+      <class name="com.altius.automation.Mealcourse"/>
+    </classes>
+  </test>  
+  
+  
 </suite> <!-- Suite -->
